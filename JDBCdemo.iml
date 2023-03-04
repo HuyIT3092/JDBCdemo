@@ -9,8 +9,9 @@
       <sourceFolder url="file://$MODULE_DIR$/src/test/java" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
-    <orderEntry type="inheritedJdk" />
+    <orderEntry type="jdk" jdkName="corretto-18" jdkType="JavaSDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" exported="" name="Maven: com.microsoft.sqlserver:mssql-jdbc:11.2.3.jre18" level="project" />
+    <orderEntry type="library" exported="" name="junit.jupiter.engine" level="project" />
   </component>
 </module>
