@@ -17,7 +17,7 @@ public interface StudentDao {
 
     public Boolean saveAllByTransaction(List<Student> students);
 
-    public void testGiet();
+
 
 
 }

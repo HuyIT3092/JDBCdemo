@@ -265,11 +265,6 @@ public class StudentDAOImplement implements StudentDao {
     }
 
     @Override
-    public void testGiet() {
-
-    }
-
-    @Override
     public Boolean saveAllByBatch(List<Student> students) {
         try (Connection conn = new DBUtils().getConnection()) {
             String sql = "INSERT INTO STUDENT VALUES (?, ?)";
