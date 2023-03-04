@@ -49,6 +49,7 @@ public class StudentDAOImplement implements StudentDao {
         return student;
     }
 
+
     @Override
     public List<Student> readAll() {
         List<Student> students = new ArrayList<>();
@@ -74,6 +75,7 @@ public class StudentDAOImplement implements StudentDao {
         }
         return students;
     }
+
 
     @Override
     public Student readDetail(Integer ID) {
@@ -104,6 +106,7 @@ public class StudentDAOImplement implements StudentDao {
 
     }
 
+
     @Override
     public Student update(Student student) {
         try (Connection conn = DBUtils.getConnection()) {
@@ -129,6 +132,7 @@ public class StudentDAOImplement implements StudentDao {
         return null;
     }
 
+
     @Override
     public Student delete(Integer ID) {
         try (Connection conn = DBUtils.getConnection()) {
@@ -151,6 +155,7 @@ public class StudentDAOImplement implements StudentDao {
 
         return null;
     }
+
 
     @Override
     public List<Student> deleteAll(List<Integer> IDs) {
@@ -210,6 +215,7 @@ public class StudentDAOImplement implements StudentDao {
 //        return null;
 //    }
 
+
     @Override
     public Boolean saveAllByTransaction(List<Student> students) {
         try (Connection conn = DBUtils.getConnection()) {
@@ -233,9 +239,8 @@ public class StudentDAOImplement implements StudentDao {
             e.printStackTrace();
         }
         return true;
-
-
     }
+
 
     @Override
     public Boolean saveAllByBatch(List<Student> students) {
@@ -262,7 +267,6 @@ public class StudentDAOImplement implements StudentDao {
         }
         return true;
     }
-
 
 }
 
