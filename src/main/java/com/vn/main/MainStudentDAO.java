@@ -71,6 +71,26 @@ public class MainStudentDAO {
     }
 
 
+    @Test
+    public void test_deleteAll() {
+        MainStudentDAO main = new MainStudentDAO();
+
+        List<Integer> idDelete = new ArrayList<>();
+        idDelete.add(7);
+        idDelete.add(14);
+        idDelete.add(3);
+
+        List<Student> listDelete = new ArrayList<>();
+        listDelete = main.studentDao.deleteAll(idDelete);
+
+        for (Student st : listDelete) {
+            System.out.println(st);
+        }
+
+
+    }
+
+
     public static void main(String[] args) {
         MainStudentDAO main = new MainStudentDAO();
         List<Student> students = main.studentDao.readAll();
