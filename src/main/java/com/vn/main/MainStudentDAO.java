@@ -78,7 +78,6 @@ public class MainStudentDAO {
         List<Integer> idDelete = new ArrayList<>();
         for (int i = 298638; i <= 323600 ; i++) {
             idDelete.add(i);
-            System.out.println("tesstttttttttttttttttttttt");
         }
 
 
